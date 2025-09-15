@@ -1,3 +1,5 @@
+//COMSC 210| Lateefah Camacho|Lab -6
+
 #include <iostream>
 using namespace std;
 
@@ -5,7 +7,9 @@ using namespace std;
 void enterArrayData(double* arr, int size) {
     cout << "Enter " << size << "double values:"<<endl;
     for(int i = 0; i < size; i++) {
-        cout <<"Value " << i+1 <<": ";
+        cout <<"Element # " << i+1 <<": ";
+        cin >> *(arr + i);
+
     }
 }
 
@@ -38,7 +42,7 @@ int main()
 
    double total = sumArray(arr, SIZE);
    cout << "Sum of Array elements: " <<total <<endl;
-
+  // new double delete
    delete[] arr;
 
     return 0;
